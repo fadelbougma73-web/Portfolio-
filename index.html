@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio Digital</title>
+    <!-- Lien vers votre futur fichier de style CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Jeune Leader du Digital - Ouagadougou</h1>
+        <p>Fadel Bougma Expert en Inbound Marketing & Création Web</p>
+    </header>
+
+    <main>
+        <section id="certifications">
+            <h2>Mes Certifications (Juin 2026)</h2>
+            <ul>
+                <li><strong>Google :</strong> Fundamentals of Digital Marketing</li>
+                <li><strong>HubSpot :</strong> Certified Inbound Marketer</li>
+                <li><strong>Coursera :</strong> WordPress & Canva Design Specialist</li>
+            </ul>
+        </section>
+        <section id="galerie">
+    <h2>Mes Créations Canva</h2>
+    <div class="grid-galerie">
+        <div class="carte-galerie">
+            <div class="image-placeholder">Logo Pro</div>
+            <h3>Identité Visuelle</h3>
+            <p>Conception de charte graphique sur Canva</p>
+        </div>
+        <div class="carte-galerie">
+            <div class="image-placeholder">Design Social</div>
+            <h3>Affiche Marketing</h3>
+            <p>Visuel optimisé pour les réseaux sociaux</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Discutons d'un projet</h2>
+    <form id="contactForm">
+        <div class="form-group">
+            <label for="name">Votre nom :</label>
+            <input type="text" id="name" required placeholder="Ex: Jean Ouédraogo">
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Votre e-mail :</label>
+            <input type="email" id="email" required placeholder="Ex: jean@mail.com">
+        </div>
+        
+        <div class="form-group">
+            <label for="message">Votre message :</label>
+            <textarea id="message" rows="4" required placeholder="Décrivez votre besoin..."></textarea>
+        </div>
+        
+        <button type="submit">Envoyer le message</button>
+    </form>
+</section>
+
+<!-- Script JavaScript pour rendre le formulaire dynamique -->
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Empêche le rechargement de la page
+        
+        // Récupération des valeurs saisies
+        const nom = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        
+        // Simulation d'une action marketing (validation dynamique)
+        alert(`Merci ${nom} ! Votre message a été validé. Une simulation d'envoi a été déclenchée depuis l'adresse : ${email}`);
+        
+        // Réinitialisation du formulaire
+        this.reset();
+    });
+</script>
+</body>
